@@ -1,18 +1,15 @@
-import Form from './components/Form';
-import Modal from './components/Modal';
+import Edition from './components/Edition';
 import Preview from './components/Preview';
 import './css/app.css';
-
+import { CvContext } from './components/context/CvContext';
 function App() {
 	return (
-		<>
-			<h1>cv maker</h1>
+		<CvContext>
 			<div id='cv-container'>
-				<Form />
+				<Edition />
 				<Preview />
 			</div>
-			<Modal />
-		</>
+		</CvContext>
 	);
 }
 
